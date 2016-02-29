@@ -16,3 +16,4 @@ dist
 /activator-sbt-*-shim.sbt
 /.sbtserver
 project/typesafe.properties
+/akka-diagnostics

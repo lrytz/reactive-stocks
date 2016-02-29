@@ -4,6 +4,8 @@ version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
+scalacOptions ++= Seq("-Ybackend:GenBCode", "-Ydelambdafy:method")
+
 // scalaz-bintray resolver needed for specs2 library
 resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
 
